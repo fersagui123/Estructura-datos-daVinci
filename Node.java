@@ -1,4 +1,4 @@
-public class Node {
+public class Node { // Representa un nodo individual en la lista enlazada, que contiene un valor entero y una referencia al siguiente nodo.
     int data; // Almacena el valor del nodo
     Node next; // Referencia al siguiente nodo en la lista
     
@@ -8,7 +8,7 @@ public class Node {
     }
 }
 
-class LinkedList {
+class LinkedList { // Implementa la lista enlazada y sus operaciones.
     Node head;
     
     public LinkedList() {
@@ -16,7 +16,7 @@ class LinkedList {
     }
     
     public void add(int data) { // Agrega un nuevo nodo al final de la lista.
-        Node newNode = new Node(data);
+        Node newNode = new Node(data); // M.D. estamos solicitando memoria en tiempo de ejecución.
         if (head == null) {
             head = newNode;
         } else {
